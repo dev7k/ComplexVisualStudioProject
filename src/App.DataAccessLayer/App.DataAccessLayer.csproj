@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\EmployeeDAO.cs" />
     <Compile Include="Models\Employee.cs">
       <DependentUpon>EmployeeTrainingModel.tt</DependentUpon>
     </Compile>
@@ -99,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.InfrastructureLayer\App.InfrastructureLayer.csproj">
+      <Project>{a387aa7a-e443-4a81-86cd-b35c24f542f2}</Project>
+      <Name>App.InfrastructureLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
