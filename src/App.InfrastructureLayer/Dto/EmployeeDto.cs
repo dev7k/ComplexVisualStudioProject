@@ -1,20 +1,30 @@
-﻿namespace App.InfrastructureLayer.Dto
+﻿using System;
+
+namespace App.InfrastructureLayer.Dto
 {
     public class EmployeeDto
     {
+        public int Id { get; set; }
+        public string EmployeeNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int Age { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public DateTime DateOfHire { get; set; }
 
-        public EmployeeDto() : this("John", "Wayne", 55)
+
+        public EmployeeDto() : this(0, "999999999", "John", "Wayne", DateTime.Now, DateTime.Now)
         {
         }
 
-        public EmployeeDto(string firstname, string lastName, int age)
+        public EmployeeDto(int id, string employeeNumber, string firstname, string lastName,
+            DateTime dateOfBirth, DateTime dateOfHire)
         {
+            Id = id;
+            EmployeeNumber = employeeNumber;
             FirstName = firstname;
             LastName = lastName;
-            Age = age;
+            DateOfBirth = dateOfBirth;
+            DateOfHire = dateOfHire;
         }
     }
 }
