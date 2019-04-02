@@ -1,17 +1,20 @@
-﻿using App.Infrastructure.Common;
-
-namespace App.Infrastructure.Dto
+﻿namespace App.Infrastructure.Dto
 {
     public class EmployeeDto
     {
-        public EmployeeDto()
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+
+        public EmployeeDto() : this("John", "Wayne", 55)
         {
-            StaticLogger.LogInfo(GetType(), "Info created");
-            StaticLogger.LogError(GetType(), "Error created");
-            StaticLogger.LogWarn(GetType(), "Warn created");
-            StaticLogger.LogTrace(GetType(), "Trace created");
-            StaticLogger.LogFatal(GetType(), "Fatal created");
-            StaticLogger.LogDebug(GetType(), "Debug created");
+        }
+
+        public EmployeeDto(string firstname, string lastName, int age)
+        {
+            FirstName = firstname;
+            LastName = lastName;
+            Age = age;
         }
     }
 }
