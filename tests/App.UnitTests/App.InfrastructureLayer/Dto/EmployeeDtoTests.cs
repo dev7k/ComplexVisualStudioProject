@@ -1,14 +1,16 @@
 ﻿using App.InfrastructureLayer.Dto;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
 
-namespace App.UnitTests.App.Infrastructure.Dto
+namespace App.UnitTests
 {
+    [TestClass]
     public class EmployeeDtoTests
     {
         public List<string> StringList { get; set; }
 
-        [SetUp]
+        [TestInitialize]
         public void Setup()
         {
             StringList = new List<string>();
@@ -16,28 +18,27 @@ namespace App.UnitTests.App.Infrastructure.Dto
             StringList.Add("World");
         }
 
-        [Test]
+        [TestMethod]
         public void ListOfStringVerification()
         {
             Assert.IsNotNull(StringList);
             Assert.AreEqual(2, StringList.Count);
         }
 
-        [Test]
+        [TestMethod]
         public void EmployeeDtoConstructorTest()
         {
             var defaultEmployee = new EmployeeDto();
-            var createdEmployee = new EmployeeDto("John", "Snow", 35);
+            var createdEmployee = new EmployeeDto(0, "999999999", "John", "Snow", DateTime.Now, DateTime.Now);
 
             Assert.IsNotNull(defaultEmployee);
             Assert.AreEqual("John", defaultEmployee.FirstName);
             Assert.AreEqual("Wayne", defaultEmployee.LastName);
-            Assert.AreEqual(55, defaultEmployee.Age);
 
             Assert.IsNotNull(createdEmployee);
             Assert.AreEqual("John", createdEmployee.FirstName);
             Assert.AreEqual("Snow", createdEmployee.LastName);
-            Assert.AreEqual(35, createdEmployee.Age);
         }
+
     }
 }
