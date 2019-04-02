@@ -13,19 +13,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\App.BusinessObject\App.BusinessObject.csproj" />
-    <ProjectReference Include="..\..\src\App.DataAccess\App.DataAccess.csproj" />
-    <ProjectReference Include="..\..\src\App.Infractructure.ConsoleApp\App.Infractructure.ConsoleApp.csproj" />
-    <ProjectReference Include="..\..\src\App.Infrastructure\App.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\App.BusinessObjectLayer\App.BusinessObjectLayer.csproj" />
+    <ProjectReference Include="..\..\src\App.DataAccessLayer\App.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\..\src\App.InfrastructureLayer\App.InfrastructureLayer.csproj" />
     <ProjectReference Include="..\..\src\App.Presentation.WinForms\App.Presentation.WinForms.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="App.BusinessObject\" />
-    <Folder Include="App.DataAccess\" />
-    <Folder Include="App.Infrastructure\Common\" />
+    <Folder Include="App.BusinessObjectLayer\" />
+    <Folder Include="App.DataAccessLayer\" />
+    <Folder Include="App.InfrastructureLayer\Common\" />
     <Folder Include="App.Presentation.WinForms\" />
-    <Folder Include="App.Infractructure.ConsoleApp\" />
   </ItemGroup>
 
 </Project>
