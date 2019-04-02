@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Presentation.WinForms",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Infractructure.ConsoleApp", "src\App.Infractructure.ConsoleApp\App.Infractructure.ConsoleApp.csproj", "{D903D92A-DA62-42B7-BCD1-9047572BDBDE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{740812C3-AE1C-4E6C-B40C-F9C5AA84ECC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A4D964E-0A84-4504-B0CF-AB537737CE56} = {740812C3-AE1C-4E6C-B40C-F9C5AA84ECC8}
+		{81A30ACA-A7D9-492F-99BA-212E54F4590C} = {740812C3-AE1C-4E6C-B40C-F9C5AA84ECC8}
+		{09216A1D-6F20-4AC1-8B2D-7FCF34A2D8ED} = {740812C3-AE1C-4E6C-B40C-F9C5AA84ECC8}
+		{7ECA5D3A-F37E-413F-B2A3-8F1A5F54EF7A} = {740812C3-AE1C-4E6C-B40C-F9C5AA84ECC8}
+		{D903D92A-DA62-42B7-BCD1-9047572BDBDE} = {740812C3-AE1C-4E6C-B40C-F9C5AA84ECC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BEAD22BF-7956-4ECE-8C25-A980D13DE034}
