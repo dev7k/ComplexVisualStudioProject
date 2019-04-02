@@ -24,7 +24,6 @@
     <Folder Include="App.BusinessObject\" />
     <Folder Include="App.DataAccess\" />
     <Folder Include="App.Infrastructure\Common\" />
-    <Folder Include="App.Infrastructure\Dto\" />
     <Folder Include="App.Presentation.WinForms\" />
     <Folder Include="App.Infractructure.ConsoleApp\" />
   </ItemGroup>
