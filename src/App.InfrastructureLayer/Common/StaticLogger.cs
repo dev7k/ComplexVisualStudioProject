@@ -1,7 +1,7 @@
 ﻿using NLog;
 using System;
 
-namespace App.Infrastructure.Common
+namespace App.InfrastructureLayer.Common
 {
     public static class StaticLogger
     {
